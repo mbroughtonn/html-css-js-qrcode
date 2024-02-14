@@ -90,3 +90,10 @@ body{
         transform: translateX(0);
     }
     }
+
+footer {
+    background-color: #186049;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
