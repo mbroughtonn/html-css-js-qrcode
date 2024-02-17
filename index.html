@@ -9,22 +9,23 @@
 </head>
 
 <body>
-    <div class="container">
-        <p>Enter your URL or Text</p>
-        <input type="text" placeholder="URL or Text" id="qrText">
+    <div class="wrapper">
+        <div class="container">
+            <p>Enter your URL or Text</p>
+            <input type="text" placeholder="URL or Text" id="qrText">
 
-        <div id="imgBox">
-            <img src="" id="qrImage">
+            <div id="imgBox">
+                <img src="" id="qrImage">
+            </div>
+            <button onclick="generateQR()">Generate QR Code</button>
         </div>
-        <button onclick="generateQR()">Generate QR Code</button>
+
+        <footer>
+            <p>Copyright &#169; 2024 Matt Broughton. All Rights Reserved.</p>
+        </footer>
     </div>
 
-    <footer>
-        <p>Copyright &#169; 2024 Matt Broughton. All Rights Reserved.</p>
-    </footer>
-
     <script>
-
         let imgBox = document.getElementById("imgBox")
         let qrImage = document.getElementById("qrImage")
         let qrText = document.getElementById("qrText")
@@ -40,8 +41,6 @@
                 }, 1000);
             }
         }
-
     </script>
 </body>
-
 </html>
